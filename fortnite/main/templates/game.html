@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block content %}
+    <h1>{{ game.title }}</h1>
+    <p>{{ game.content }}</p>
+
+    <iframe width="420" height="345" src="{{ game.vidoe }}">
+    </iframe>
+
+    <a class="nav-item nav-link" href="/games">New</a>
+{% endblock content %}
